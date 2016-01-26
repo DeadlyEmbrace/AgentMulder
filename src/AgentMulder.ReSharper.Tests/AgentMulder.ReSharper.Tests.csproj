@@ -64,6 +64,10 @@
       <HintPath>..\packages\JetBrains.Platform.Lib.DevExpress.2.0.20150224.0\lib\Net\DevExpress.XtraTreeList.v7.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DryIoc, Version=2.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DryIoc.dll.2.1.3\lib\net40\DryIoc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=25313d96c538ed3d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\SharpZipLib.JetBrains.Stripped.0.86.20150204.1\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -183,6 +187,10 @@
       <Project>{7a613eff-5f7f-46f4-9995-3f6c0e526891}</Project>
       <Name>AgentMulder.Containers.Catel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AgentMulder.Containers.DryIoc\AgentMulder.Containers.DryIoc.csproj">
+      <Project>{0F0855E8-130F-4E77-9B66-9D90F784920C}</Project>
+      <Name>AgentMulder.Containers.DryIoc</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AgentMulder.Containers.Ninject\AgentMulder.Containers.Ninject.csproj">
       <Project>{2f91f4db-3d52-4aae-8f21-b33db11ed0ab}</Project>
       <Name>AgentMulder.Containers.Ninject</Name>
@@ -214,6 +222,7 @@
     <Compile Include="Autofac\MvcTests.cs" />
     <Compile Include="Autofac\RegisterAssemblyTypesTests.cs" />
     <Compile Include="Catel\ServiceLocatorTests.cs" />
+    <Compile Include="DryIoc\ContainerTests.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Ninject\KernelTests.cs" />
     <Compile Include="Ninject\ModuleTests.cs" />

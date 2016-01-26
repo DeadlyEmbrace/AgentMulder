@@ -84,6 +84,7 @@
       <HintPath>..\packages\JetBrains.Annotations.10.0.0\lib\net20\JetBrains.Annotations.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi, Version=104.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Deployment.Compression">
       <HintPath>..\packages\JetBrains.Platform.Lib.Microsoft.Deployment.Compression.Cab.2.0.20140304.0\lib\Microsoft.Deployment.Compression.dll</HintPath>
     </Reference>
