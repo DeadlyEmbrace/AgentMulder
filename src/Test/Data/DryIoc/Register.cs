@@ -1,4 +1,8 @@
-﻿using DryIoc;
+﻿// Patterns: 1
+// Matches: CommonImpl1.cs
+// NotMatches: Foo.cs
+
+using DryIoc;
 using TestApplication.Types;
 
 namespace TestApplication.DryIoc

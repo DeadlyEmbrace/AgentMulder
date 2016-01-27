@@ -2,7 +2,7 @@
 
 namespace AgentMulder.ReSharper.Tests.DryIoc
 {
-    [TestWithNuGetPackage(Packages = new [] { "DryIoc:2.1.3.0" })]
+    [TestWithNuGetPackage(Packages = new [] { "DryIoc" })]
     public class ContainerTests : AgentMulderTestBase<DryIocCotnainerInfo>
     {
          protected override string RelativeTestDataPath

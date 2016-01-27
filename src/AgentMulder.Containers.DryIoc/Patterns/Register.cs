@@ -9,12 +9,12 @@ namespace AgentMulder.Containers.DryIoc.Patterns
     [Export("ComponentRegistration", typeof(IRegistrationPattern))]
     public class Register : RegisterWithService
     {
-        private static readonly IStructuralSearchPattern pattern = new CSharpStructuralSearchPattern("$builder$.Register<$type$,$concrete$>()",
-            new ExpressionPlaceholder("builder", "global::DryIoc.Container", true),
-            new ArgumentPlaceholder("type", -1, -1), 
-            new ArgumentPlaceholder("concrete", -1, -1));
+        private static readonly IStructuralSearchPattern pattern = new CSharpStructuralSearchPattern("$container$.Register<$type$,$concrete$>()",
+            new ExpressionPlaceholder("container"), //, "global::DryIoc.Container", true
+            new TypePlaceholder("type"), 
+            new TypePlaceholder("concrete"));
 
-        public Register(IStructuralSearchPattern pattern)
+        public Register()
             : base(pattern)
         {
         }
